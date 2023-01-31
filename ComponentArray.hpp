@@ -27,11 +27,13 @@ namespace ECS {
         void removeData(Entity entity) {
             if (entity_to_index.find(entity) == entity_to_index.end())
                 throw RuntimeException("ComponentArray::removeData", "Entity's component is not contained in corresponding ComponentArray");
+            std::size_t index_to_delete = entity_to_index[entity];
+            Entity replacing_entity = index_to_entity[index_last - 1];
             component_array[entity_to_index[entity]] = component_array[index_last - 1];
-            entity_to_index[index_to_entity[index_last - 1]] = entity_to_index[entity];
-            index_to_entity[entity_to_index[entity]] = index_to_entity[index_last - 1];
+            entity_to_index[replacing_entity] = index_to_delete;
+            index_to_entity[index_to_delete] = replacing_entity;
             entity_to_index.erase(entity);
-            entity_to_index.erase(index_last - 1);
+            index_to_entity.erase(index_last - 1);
             index_last--;
         }
         ComponentT &getData(Entity entity) {
