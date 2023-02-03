@@ -5,7 +5,7 @@
 
 namespace ECS {
     /**
-     * @brief RuntimeException is a custom exception
+     * @brief RuntimeException is a custom exception for ECS
      */
     class RuntimeException : public std::exception {
     public:

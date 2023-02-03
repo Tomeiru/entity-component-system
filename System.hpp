@@ -5,7 +5,7 @@
 
 namespace ECS {
     /**
-     * @brief System is a container for entities
+     * @brief System is a base class for all systems
      */
     class System {
     public:

@@ -16,7 +16,7 @@ namespace ECS {
     };
 
     /**
-     * @brief ComponentArray is a container for components
+     * @brief ComponentArray is a container for components of a specific type
      * @tparam ComponentT Type of the components
      */
     template<typename ComponentT>
@@ -40,7 +40,7 @@ namespace ECS {
             index_last++;
         }
         /**
-         * @brief Remove data from an entity
+         * @brief Remove component data from an entity
          * @param entity Entity to remove the data from
          */
         void removeData(Entity entity) {
@@ -56,7 +56,7 @@ namespace ECS {
             index_last--;
         }
         /**
-         * @brief Get the data of an entity
+         * @brief Get the component data of an entity
          * @param entity Entity to get the data from
          * @return ComponentT& Reference to the component
          */
@@ -66,7 +66,7 @@ namespace ECS {
             return (component_array[entity_to_index[entity]]);
         }
         /**
-         * @brief Remove data from a destroyed entity
+         * @brief Signals that an entity has been destroyed and removes the component data from the entity if it exists
          * @param entity Entity to remove the data from
          */
         void entityDestroyed(Entity entity) override {

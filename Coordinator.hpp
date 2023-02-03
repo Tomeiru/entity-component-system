@@ -24,7 +24,7 @@ namespace ECS {
             return (entity_manager->createEntity());
         }
         /**
-         * @brief Destroy an entity
+         * @brief Destroy an entity and alert the managers
          * @param entity Entity to destroy
          */
         void destroyEntity(Entity entity) {
@@ -33,7 +33,7 @@ namespace ECS {
             system_manager->entityDestroyed(entity);
         }
         /**
-         * @brief Register a component
+         * @brief Register a component type to the component manager
          * @tparam ComponentT Type of the component to register
          */
         template<typename ComponentT>

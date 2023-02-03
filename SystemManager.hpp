@@ -57,7 +57,7 @@ namespace ECS {
             type_name_to_system_signature[type_name].set(position, value);
         }
         /**
-         * @brief handle the destruction of an entity
+         * @brief handle the destruction of an entity by removing it from all systems
          * @param entity The entity that has been destroyed
          */
         void entityDestroyed(Entity entity) {
