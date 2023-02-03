@@ -79,28 +79,246 @@ $(function() {
   <div class="headertitle"><div class="title">ECS::SystemManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_e_c_s_1_1_system_manager.html" title="SystemManager is a container for Systems.">SystemManager</a> is a container for Systems.  
+ <a href="class_e_c_s_1_1_system_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_system_manager_8hpp_source.html">SystemManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab37e2582c5c72a8ab10210dbd6c2c027"><td class="memTemplParams" colspan="2"><a id="ab37e2582c5c72a8ab10210dbd6c2c027" name="ab37e2582c5c72a8ab10210dbd6c2c027"></a>
-template&lt;typename SystemT &gt; </td></tr>
-<tr class="memitem:ab37e2582c5c72a8ab10210dbd6c2c027"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; SystemT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerSystem</b> ()</td></tr>
+<tr class="memitem:ab37e2582c5c72a8ab10210dbd6c2c027"><td class="memTemplParams" colspan="2">template&lt;typename SystemT &gt; </td></tr>
+<tr class="memitem:ab37e2582c5c72a8ab10210dbd6c2c027"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; SystemT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#ab37e2582c5c72a8ab10210dbd6c2c027">registerSystem</a> ()</td></tr>
+<tr class="memdesc:ab37e2582c5c72a8ab10210dbd6c2c027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new system type.  <br /></td></tr>
 <tr class="separator:ab37e2582c5c72a8ab10210dbd6c2c027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f3a78050cfdbfb70f56ba34f0bb0f4"><td class="memTemplParams" colspan="2"><a id="a54f3a78050cfdbfb70f56ba34f0bb0f4" name="a54f3a78050cfdbfb70f56ba34f0bb0f4"></a>
-template&lt;typename SystemT &gt; </td></tr>
-<tr class="memitem:a54f3a78050cfdbfb70f56ba34f0bb0f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setSignature</b> (Signature signature)</td></tr>
+<tr class="memitem:a54f3a78050cfdbfb70f56ba34f0bb0f4"><td class="memTemplParams" colspan="2">template&lt;typename SystemT &gt; </td></tr>
+<tr class="memitem:a54f3a78050cfdbfb70f56ba34f0bb0f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#a54f3a78050cfdbfb70f56ba34f0bb0f4">setSignature</a> (Signature signature)</td></tr>
+<tr class="memdesc:a54f3a78050cfdbfb70f56ba34f0bb0f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the signature of a system  <br /></td></tr>
 <tr class="separator:a54f3a78050cfdbfb70f56ba34f0bb0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27abc06914aa1aefe4ff68d04c1bf2e2"><td class="memTemplParams" colspan="2"><a id="a27abc06914aa1aefe4ff68d04c1bf2e2" name="a27abc06914aa1aefe4ff68d04c1bf2e2"></a>
-template&lt;typename SystemT &gt; </td></tr>
-<tr class="memitem:a27abc06914aa1aefe4ff68d04c1bf2e2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setSignatureBit</b> (size_t position, bool value=true)</td></tr>
+<tr class="memitem:a27abc06914aa1aefe4ff68d04c1bf2e2"><td class="memTemplParams" colspan="2">template&lt;typename SystemT &gt; </td></tr>
+<tr class="memitem:a27abc06914aa1aefe4ff68d04c1bf2e2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#a27abc06914aa1aefe4ff68d04c1bf2e2">setSignatureBit</a> (size_t position, bool value=true)</td></tr>
+<tr class="memdesc:a27abc06914aa1aefe4ff68d04c1bf2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a bit of the signature of a system  <br /></td></tr>
 <tr class="separator:a27abc06914aa1aefe4ff68d04c1bf2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3719cbdb432bdc67679fd7cf5b095e0"><td class="memItemLeft" align="right" valign="top"><a id="ab3719cbdb432bdc67679fd7cf5b095e0" name="ab3719cbdb432bdc67679fd7cf5b095e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>entityDestroyed</b> (Entity entity)</td></tr>
+<tr class="memitem:ab3719cbdb432bdc67679fd7cf5b095e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#ab3719cbdb432bdc67679fd7cf5b095e0">entityDestroyed</a> (Entity entity)</td></tr>
+<tr class="memdesc:ab3719cbdb432bdc67679fd7cf5b095e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the destruction of an entity by removing it from all systems  <br /></td></tr>
 <tr class="separator:ab3719cbdb432bdc67679fd7cf5b095e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="memItemLeft" align="right" valign="top"><a id="a36fa0e26c4cdd80b0d4eb86f9708c694" name="a36fa0e26c4cdd80b0d4eb86f9708c694"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>entitySignatureChanged</b> (Entity entity, Signature signature)</td></tr>
+<tr class="memitem:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#a36fa0e26c4cdd80b0d4eb86f9708c694">entitySignatureChanged</a> (Entity entity, Signature signature)</td></tr>
+<tr class="memdesc:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the signature change of an entity  <br /></td></tr>
 <tr class="separator:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_e_c_s_1_1_system_manager.html" title="SystemManager is a container for Systems.">SystemManager</a> is a container for Systems. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab3719cbdb432bdc67679fd7cf5b095e0" name="ab3719cbdb432bdc67679fd7cf5b095e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3719cbdb432bdc67679fd7cf5b095e0">&#9670;&#160;</a></span>entityDestroyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::SystemManager::entityDestroyed </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>handle the destruction of an entity by removing it from all systems </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>The entity that has been destroyed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36fa0e26c4cdd80b0d4eb86f9708c694" name="a36fa0e26c4cdd80b0d4eb86f9708c694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fa0e26c4cdd80b0d4eb86f9708c694">&#9670;&#160;</a></span>entitySignatureChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::SystemManager::entitySignatureChanged </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Signature&#160;</td>
+          <td class="paramname"><em>signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>handle the signature change of an entity </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>The entity that has changed </td></tr>
+    <tr><td class="paramname">signature</td><td>The new signature of the entity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab37e2582c5c72a8ab10210dbd6c2c027" name="ab37e2582c5c72a8ab10210dbd6c2c027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37e2582c5c72a8ab10210dbd6c2c027">&#9670;&#160;</a></span>registerSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; SystemT &gt; ECS::SystemManager::registerSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a new system type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to register </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the system </dd></dl>
+
+</div>
+</div>
+<a id="a54f3a78050cfdbfb70f56ba34f0bb0f4" name="a54f3a78050cfdbfb70f56ba34f0bb0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f3a78050cfdbfb70f56ba34f0bb0f4">&#9670;&#160;</a></span>setSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::SystemManager::setSignature </td>
+          <td>(</td>
+          <td class="paramtype">Signature&#160;</td>
+          <td class="paramname"><em>signature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the signature of a system </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to set the signature of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature</td><td>The signature to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27abc06914aa1aefe4ff68d04c1bf2e2" name="a27abc06914aa1aefe4ff68d04c1bf2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27abc06914aa1aefe4ff68d04c1bf2e2">&#9670;&#160;</a></span>setSignatureBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::SystemManager::setSignatureBit </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set a bit of the signature of a system </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to set the signature of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The position of the bit to set </td></tr>
+    <tr><td class="paramname">value</td><td>The value to set the bit to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_system_manager_8hpp_source.html">SystemManager.hpp</a></li>
 </ul>

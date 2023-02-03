@@ -79,18 +79,106 @@ $(function() {
   <div class="headertitle"><div class="title">ECS::ResourceManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_e_c_s_1_1_resource_manager.html" title="ResourceManager is a container for Resources.">ResourceManager</a> is a container for Resources.  
+ <a href="class_e_c_s_1_1_resource_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_resource_manager_8hpp_source.html">ResourceManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a970729780147052b9282b1785f0374c2"><td class="memTemplParams" colspan="2"><a id="a970729780147052b9282b1785f0374c2" name="a970729780147052b9282b1785f0374c2"></a>
-template&lt;typename ResourceT , typename ... Args&gt; </td></tr>
-<tr class="memitem:a970729780147052b9282b1785f0374c2"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerResource</b> (Args ...args)</td></tr>
+<tr class="memitem:a970729780147052b9282b1785f0374c2"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT , typename ... Args&gt; </td></tr>
+<tr class="memitem:a970729780147052b9282b1785f0374c2"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_resource_manager.html#a970729780147052b9282b1785f0374c2">registerResource</a> (Args ...args)</td></tr>
+<tr class="memdesc:a970729780147052b9282b1785f0374c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new resource type.  <br /></td></tr>
 <tr class="separator:a970729780147052b9282b1785f0374c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac783b729e302252fae740e3158025ace"><td class="memTemplParams" colspan="2"><a id="ac783b729e302252fae740e3158025ace" name="ac783b729e302252fae740e3158025ace"></a>
-template&lt;typename ResourceT &gt; </td></tr>
-<tr class="memitem:ac783b729e302252fae740e3158025ace"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getResource</b> ()</td></tr>
+<tr class="memitem:ac783b729e302252fae740e3158025ace"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT &gt; </td></tr>
+<tr class="memitem:ac783b729e302252fae740e3158025ace"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_resource_manager.html#ac783b729e302252fae740e3158025ace">getResource</a> ()</td></tr>
+<tr class="memdesc:ac783b729e302252fae740e3158025ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a resource.  <br /></td></tr>
 <tr class="separator:ac783b729e302252fae740e3158025ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_e_c_s_1_1_resource_manager.html" title="ResourceManager is a container for Resources.">ResourceManager</a> is a container for Resources. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac783b729e302252fae740e3158025ace" name="ac783b729e302252fae740e3158025ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac783b729e302252fae740e3158025ace">&#9670;&#160;</a></span>getResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ResourceT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; ResourceT &gt; ECS::ResourceManager::getResource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a resource. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ResourceT</td><td>Type of the resource to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the resource </dd></dl>
+
+</div>
+</div>
+<a id="a970729780147052b9282b1785f0374c2" name="a970729780147052b9282b1785f0374c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970729780147052b9282b1785f0374c2">&#9670;&#160;</a></span>registerResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ResourceT , typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; ResourceT &gt; ECS::ResourceManager::registerResource </td>
+          <td>(</td>
+          <td class="paramtype">Args ...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a new resource type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ResourceT</td><td>Type of the resource to register </td></tr>
+    <tr><td class="paramname">Args</td><td>Types of the arguments to pass to the constructor of the resource </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Arguments to pass to the constructor of the resource </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the resource </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_resource_manager_8hpp_source.html">ResourceManager.hpp</a></li>
 </ul>

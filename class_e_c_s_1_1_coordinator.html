@@ -79,64 +79,634 @@ $(function() {
   <div class="headertitle"><div class="title">ECS::Coordinator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_e_c_s_1_1_coordinator.html" title="Coordinator is the main class of the ECS.">Coordinator</a> is the main class of the ECS.  
+ <a href="class_e_c_s_1_1_coordinator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_coordinator_8hpp_source.html">Coordinator.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8ef21d8d1dbaa7ef5776568ce346c817"><td class="memItemLeft" align="right" valign="top"><a id="a8ef21d8d1dbaa7ef5776568ce346c817" name="a8ef21d8d1dbaa7ef5776568ce346c817"></a>
-Entity&#160;</td><td class="memItemRight" valign="bottom"><b>createEntity</b> ()</td></tr>
+<tr class="memitem:aafc355aaf61fb5373a784549e5614bd6"><td class="memItemLeft" align="right" valign="top"><a id="aafc355aaf61fb5373a784549e5614bd6" name="aafc355aaf61fb5373a784549e5614bd6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Coordinator</b> ()</td></tr>
+<tr class="memdesc:aafc355aaf61fb5373a784549e5614bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_e_c_s_1_1_coordinator.html" title="Coordinator is the main class of the ECS.">Coordinator</a> object. <br /></td></tr>
+<tr class="separator:aafc355aaf61fb5373a784549e5614bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef21d8d1dbaa7ef5776568ce346c817"><td class="memItemLeft" align="right" valign="top">Entity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a8ef21d8d1dbaa7ef5776568ce346c817">createEntity</a> ()</td></tr>
+<tr class="memdesc:a8ef21d8d1dbaa7ef5776568ce346c817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entity.  <br /></td></tr>
 <tr class="separator:a8ef21d8d1dbaa7ef5776568ce346c817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a309a9cec1ca9da8e70cb95b87f23f79a"><td class="memItemLeft" align="right" valign="top"><a id="a309a9cec1ca9da8e70cb95b87f23f79a" name="a309a9cec1ca9da8e70cb95b87f23f79a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyEntity</b> (Entity entity)</td></tr>
+<tr class="memitem:a309a9cec1ca9da8e70cb95b87f23f79a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a309a9cec1ca9da8e70cb95b87f23f79a">destroyEntity</a> (Entity entity)</td></tr>
+<tr class="memdesc:a309a9cec1ca9da8e70cb95b87f23f79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an entity and alert the managers.  <br /></td></tr>
 <tr class="separator:a309a9cec1ca9da8e70cb95b87f23f79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abceb72b64afa72fa2d1d2270cccee156"><td class="memTemplParams" colspan="2"><a id="abceb72b64afa72fa2d1d2270cccee156" name="abceb72b64afa72fa2d1d2270cccee156"></a>
-template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:abceb72b64afa72fa2d1d2270cccee156"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerComponent</b> ()</td></tr>
+<tr class="memitem:abceb72b64afa72fa2d1d2270cccee156"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:abceb72b64afa72fa2d1d2270cccee156"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#abceb72b64afa72fa2d1d2270cccee156">registerComponent</a> ()</td></tr>
+<tr class="memdesc:abceb72b64afa72fa2d1d2270cccee156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a component type to the component manager.  <br /></td></tr>
 <tr class="separator:abceb72b64afa72fa2d1d2270cccee156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7728eda21a25bb773e7590ae2830cae"><td class="memTemplParams" colspan="2"><a id="ac7728eda21a25bb773e7590ae2830cae" name="ac7728eda21a25bb773e7590ae2830cae"></a>
-template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:ac7728eda21a25bb773e7590ae2830cae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addComponent</b> (Entity entity, ComponentT component)</td></tr>
+<tr class="memitem:ac7728eda21a25bb773e7590ae2830cae"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:ac7728eda21a25bb773e7590ae2830cae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#ac7728eda21a25bb773e7590ae2830cae">addComponent</a> (Entity entity, ComponentT component)</td></tr>
+<tr class="memdesc:ac7728eda21a25bb773e7590ae2830cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a component to an entity.  <br /></td></tr>
 <tr class="separator:ac7728eda21a25bb773e7590ae2830cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a591db87af2d9b43d7e9dabcceef7d"><td class="memTemplParams" colspan="2"><a id="ab3a591db87af2d9b43d7e9dabcceef7d" name="ab3a591db87af2d9b43d7e9dabcceef7d"></a>
-template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:ab3a591db87af2d9b43d7e9dabcceef7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>removeComponent</b> (Entity entity)</td></tr>
+<tr class="memitem:ab3a591db87af2d9b43d7e9dabcceef7d"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:ab3a591db87af2d9b43d7e9dabcceef7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#ab3a591db87af2d9b43d7e9dabcceef7d">removeComponent</a> (Entity entity)</td></tr>
+<tr class="memdesc:ab3a591db87af2d9b43d7e9dabcceef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a component from an entity.  <br /></td></tr>
 <tr class="separator:ab3a591db87af2d9b43d7e9dabcceef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf8ee42e11f219f6964083d35e28908f"><td class="memTemplParams" colspan="2"><a id="abf8ee42e11f219f6964083d35e28908f" name="abf8ee42e11f219f6964083d35e28908f"></a>
-template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:abf8ee42e11f219f6964083d35e28908f"><td class="memTemplItemLeft" align="right" valign="top">ComponentT &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getComponent</b> (Entity entity)</td></tr>
+<tr class="memitem:abf8ee42e11f219f6964083d35e28908f"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:abf8ee42e11f219f6964083d35e28908f"><td class="memTemplItemLeft" align="right" valign="top">ComponentT &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#abf8ee42e11f219f6964083d35e28908f">getComponent</a> (Entity entity)</td></tr>
+<tr class="memdesc:abf8ee42e11f219f6964083d35e28908f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a component from an entity.  <br /></td></tr>
 <tr class="separator:abf8ee42e11f219f6964083d35e28908f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac190afcc488096add5cfeabc60531ca7"><td class="memTemplParams" colspan="2"><a id="ac190afcc488096add5cfeabc60531ca7" name="ac190afcc488096add5cfeabc60531ca7"></a>
-template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:ac190afcc488096add5cfeabc60531ca7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>hasComponent</b> (Entity entity)</td></tr>
+<tr class="memitem:ac190afcc488096add5cfeabc60531ca7"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:ac190afcc488096add5cfeabc60531ca7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#ac190afcc488096add5cfeabc60531ca7">hasComponent</a> (Entity entity)</td></tr>
+<tr class="memdesc:ac190afcc488096add5cfeabc60531ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an entity has a component.  <br /></td></tr>
 <tr class="separator:ac190afcc488096add5cfeabc60531ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a626b637f55cc766160f4974c97d29f21"><td class="memTemplParams" colspan="2"><a id="a626b637f55cc766160f4974c97d29f21" name="a626b637f55cc766160f4974c97d29f21"></a>
-template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:a626b637f55cc766160f4974c97d29f21"><td class="memTemplItemLeft" align="right" valign="top">ComponentType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getComponentType</b> ()</td></tr>
+<tr class="memitem:a626b637f55cc766160f4974c97d29f21"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:a626b637f55cc766160f4974c97d29f21"><td class="memTemplItemLeft" align="right" valign="top">ComponentType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a626b637f55cc766160f4974c97d29f21">getComponentType</a> ()</td></tr>
+<tr class="memdesc:a626b637f55cc766160f4974c97d29f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Component Type object.  <br /></td></tr>
 <tr class="separator:a626b637f55cc766160f4974c97d29f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801b5d6c6549f4581928953817b7f458"><td class="memTemplParams" colspan="2"><a id="a801b5d6c6549f4581928953817b7f458" name="a801b5d6c6549f4581928953817b7f458"></a>
-template&lt;typename SystemT &gt; </td></tr>
-<tr class="memitem:a801b5d6c6549f4581928953817b7f458"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; SystemT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerSystem</b> ()</td></tr>
+<tr class="memitem:a801b5d6c6549f4581928953817b7f458"><td class="memTemplParams" colspan="2">template&lt;typename SystemT &gt; </td></tr>
+<tr class="memitem:a801b5d6c6549f4581928953817b7f458"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; SystemT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a801b5d6c6549f4581928953817b7f458">registerSystem</a> ()</td></tr>
+<tr class="memdesc:a801b5d6c6549f4581928953817b7f458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a system.  <br /></td></tr>
 <tr class="separator:a801b5d6c6549f4581928953817b7f458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c3ff1530de4cad03d61a21a5d273df"><td class="memTemplParams" colspan="2"><a id="a20c3ff1530de4cad03d61a21a5d273df" name="a20c3ff1530de4cad03d61a21a5d273df"></a>
-template&lt;typename SystemT &gt; </td></tr>
-<tr class="memitem:a20c3ff1530de4cad03d61a21a5d273df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setSignature</b> (Signature signature)</td></tr>
+<tr class="memitem:a20c3ff1530de4cad03d61a21a5d273df"><td class="memTemplParams" colspan="2">template&lt;typename SystemT &gt; </td></tr>
+<tr class="memitem:a20c3ff1530de4cad03d61a21a5d273df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a20c3ff1530de4cad03d61a21a5d273df">setSignature</a> (Signature signature)</td></tr>
+<tr class="memdesc:a20c3ff1530de4cad03d61a21a5d273df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the signature of a system.  <br /></td></tr>
 <tr class="separator:a20c3ff1530de4cad03d61a21a5d273df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a353718578d37734349810b62ad39d3aa"><td class="memTemplParams" colspan="2"><a id="a353718578d37734349810b62ad39d3aa" name="a353718578d37734349810b62ad39d3aa"></a>
-template&lt;typename SystemT , typename ComponentT &gt; </td></tr>
-<tr class="memitem:a353718578d37734349810b62ad39d3aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setSignatureBit</b> (bool value=true)</td></tr>
+<tr class="memitem:a353718578d37734349810b62ad39d3aa"><td class="memTemplParams" colspan="2">template&lt;typename SystemT , typename ComponentT &gt; </td></tr>
+<tr class="memitem:a353718578d37734349810b62ad39d3aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a353718578d37734349810b62ad39d3aa">setSignatureBit</a> (bool value=true)</td></tr>
+<tr class="memdesc:a353718578d37734349810b62ad39d3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the signature bit of a system.  <br /></td></tr>
 <tr class="separator:a353718578d37734349810b62ad39d3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplParams" colspan="2"><a id="ae2dd2c0ed25061b0fb9741ca83be54c0" name="ae2dd2c0ed25061b0fb9741ca83be54c0"></a>
-template&lt;typename SystemT , typename ... ComponentTs&gt; </td></tr>
-<tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setSignatureBits</b> (bool value=true)</td></tr>
+<tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplParams" colspan="2">template&lt;typename SystemT , typename ... ComponentTs&gt; </td></tr>
+<tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#ae2dd2c0ed25061b0fb9741ca83be54c0">setSignatureBits</a> (bool value=true)</td></tr>
+<tr class="memdesc:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the signature bits of a system.  <br /></td></tr>
 <tr class="separator:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9931cb92e01e618d08383bf2d7d011af"><td class="memTemplParams" colspan="2"><a id="a9931cb92e01e618d08383bf2d7d011af" name="a9931cb92e01e618d08383bf2d7d011af"></a>
-template&lt;typename ResourceT , typename ... Args&gt; </td></tr>
-<tr class="memitem:a9931cb92e01e618d08383bf2d7d011af"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registerResource</b> (Args ...args)</td></tr>
+<tr class="memitem:a9931cb92e01e618d08383bf2d7d011af"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT , typename ... Args&gt; </td></tr>
+<tr class="memitem:a9931cb92e01e618d08383bf2d7d011af"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a9931cb92e01e618d08383bf2d7d011af">registerResource</a> (Args ...args)</td></tr>
+<tr class="memdesc:a9931cb92e01e618d08383bf2d7d011af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a resource.  <br /></td></tr>
 <tr class="separator:a9931cb92e01e618d08383bf2d7d011af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f1a1ddcd97414a211dcb7924b368419"><td class="memTemplParams" colspan="2"><a id="a6f1a1ddcd97414a211dcb7924b368419" name="a6f1a1ddcd97414a211dcb7924b368419"></a>
-template&lt;typename ResourceT &gt; </td></tr>
-<tr class="memitem:a6f1a1ddcd97414a211dcb7924b368419"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getResource</b> ()</td></tr>
+<tr class="memitem:a6f1a1ddcd97414a211dcb7924b368419"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT &gt; </td></tr>
+<tr class="memitem:a6f1a1ddcd97414a211dcb7924b368419"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a6f1a1ddcd97414a211dcb7924b368419">getResource</a> ()</td></tr>
+<tr class="memdesc:a6f1a1ddcd97414a211dcb7924b368419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a resource.  <br /></td></tr>
 <tr class="separator:a6f1a1ddcd97414a211dcb7924b368419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_e_c_s_1_1_coordinator.html" title="Coordinator is the main class of the ECS.">Coordinator</a> is the main class of the ECS. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac7728eda21a25bb773e7590ae2830cae" name="ac7728eda21a25bb773e7590ae2830cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7728eda21a25bb773e7590ae2830cae">&#9670;&#160;</a></span>addComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::addComponent </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComponentT&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a component to an entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to add the component to </td></tr>
+    <tr><td class="paramname">component</td><td>Component to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ef21d8d1dbaa7ef5776568ce346c817" name="a8ef21d8d1dbaa7ef5776568ce346c817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef21d8d1dbaa7ef5776568ce346c817">&#9670;&#160;</a></span>createEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity ECS::Coordinator::createEntity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new entity. </p>
+<dl class="section return"><dt>Returns</dt><dd>Entity created </dd></dl>
+
+</div>
+</div>
+<a id="a309a9cec1ca9da8e70cb95b87f23f79a" name="a309a9cec1ca9da8e70cb95b87f23f79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a309a9cec1ca9da8e70cb95b87f23f79a">&#9670;&#160;</a></span>destroyEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::destroyEntity </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy an entity and alert the managers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf8ee42e11f219f6964083d35e28908f" name="abf8ee42e11f219f6964083d35e28908f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8ee42e11f219f6964083d35e28908f">&#9670;&#160;</a></span>getComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ComponentT &amp; ECS::Coordinator::getComponent </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a component from an entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to get the component from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ComponentT&amp; Reference to the component </dd></dl>
+
+</div>
+</div>
+<a id="a626b637f55cc766160f4974c97d29f21" name="a626b637f55cc766160f4974c97d29f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626b637f55cc766160f4974c97d29f21">&#9670;&#160;</a></span>getComponentType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ComponentType ECS::Coordinator::getComponentType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Component Type object. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to get the type from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ComponentType Type of the component </dd></dl>
+
+</div>
+</div>
+<a id="a6f1a1ddcd97414a211dcb7924b368419" name="a6f1a1ddcd97414a211dcb7924b368419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1a1ddcd97414a211dcb7924b368419">&#9670;&#160;</a></span>getResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ResourceT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; ResourceT &gt; ECS::Coordinator::getResource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a resource. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ResourceT</td><td>Type of the resource to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;ResourceT&gt; Pointer to the resource </dd></dl>
+
+</div>
+</div>
+<a id="ac190afcc488096add5cfeabc60531ca7" name="ac190afcc488096add5cfeabc60531ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac190afcc488096add5cfeabc60531ca7">&#9670;&#160;</a></span>hasComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ECS::Coordinator::hasComponent </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if an entity has a component. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true If the entity has the component, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="abceb72b64afa72fa2d1d2270cccee156" name="abceb72b64afa72fa2d1d2270cccee156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abceb72b64afa72fa2d1d2270cccee156">&#9670;&#160;</a></span>registerComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::registerComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a component type to the component manager. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to register </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9931cb92e01e618d08383bf2d7d011af" name="a9931cb92e01e618d08383bf2d7d011af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9931cb92e01e618d08383bf2d7d011af">&#9670;&#160;</a></span>registerResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ResourceT , typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; ResourceT &gt; ECS::Coordinator::registerResource </td>
+          <td>(</td>
+          <td class="paramtype">Args ...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a resource. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the resource to register </td></tr>
+    <tr><td class="paramname">Args</td><td>Types of the arguments to pass to the resource constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Arguments to pass to the resource constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;ResourceT&gt; Pointer to the resource </dd></dl>
+
+</div>
+</div>
+<a id="a801b5d6c6549f4581928953817b7f458" name="a801b5d6c6549f4581928953817b7f458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801b5d6c6549f4581928953817b7f458">&#9670;&#160;</a></span>registerSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; SystemT &gt; ECS::Coordinator::registerSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a system. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to register </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;SystemT&gt; Pointer to the system </dd></dl>
+
+</div>
+</div>
+<a id="ab3a591db87af2d9b43d7e9dabcceef7d" name="ab3a591db87af2d9b43d7e9dabcceef7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a591db87af2d9b43d7e9dabcceef7d">&#9670;&#160;</a></span>removeComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::removeComponent </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a component from an entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to remove the component from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20c3ff1530de4cad03d61a21a5d273df" name="a20c3ff1530de4cad03d61a21a5d273df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c3ff1530de4cad03d61a21a5d273df">&#9670;&#160;</a></span>setSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::setSignature </td>
+          <td>(</td>
+          <td class="paramtype">Signature&#160;</td>
+          <td class="paramname"><em>signature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the signature of a system. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to set the signature of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature</td><td>Signature to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a353718578d37734349810b62ad39d3aa" name="a353718578d37734349810b62ad39d3aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353718578d37734349810b62ad39d3aa">&#9670;&#160;</a></span>setSignatureBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT , typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::setSignatureBit </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the signature bit of a system. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to set the signature bit of </td></tr>
+    <tr><td class="paramname">ComponentT</td><td>Type of the component to set the signature bit of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Value to set the signature bit to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae2dd2c0ed25061b0fb9741ca83be54c0" name="ae2dd2c0ed25061b0fb9741ca83be54c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2dd2c0ed25061b0fb9741ca83be54c0">&#9670;&#160;</a></span>setSignatureBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT , typename ... ComponentTs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECS::Coordinator::setSignatureBits </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the signature bits of a system. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to set the signature bits of </td></tr>
+    <tr><td class="paramname">ComponentTs</td><td>Types of the components to set the signature bits of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Value to set the signature bits to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_coordinator_8hpp_source.html">Coordinator.hpp</a></li>
 </ul>

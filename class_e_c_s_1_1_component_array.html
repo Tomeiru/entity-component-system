@@ -79,37 +79,55 @@ $(function() {
   <div class="headertitle"><div class="title">ECS::ComponentArray&lt; ComponentT &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_e_c_s_1_1_component_array.html" title="ComponentArray is a container for components of a specific type.">ComponentArray</a> is a container for components of a specific type.  
+ <a href="class_e_c_s_1_1_component_array.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_component_array_8hpp_source.html">ComponentArray.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ECS::ComponentArray&lt; ComponentT &gt;:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_e_c_s_1_1_component_array.png" usemap="#ECS::ComponentArray_3C_20ComponentT_20_3E_map" alt=""/>
   <map id="ECS::ComponentArray_3C_20ComponentT_20_3E_map" name="ECS::ComponentArray_3C_20ComponentT_20_3E_map">
-<area href="class_e_c_s_1_1_i_component_array.html" alt="ECS::IComponentArray" shape="rect" coords="0,0,233,24"/>
+<area href="class_e_c_s_1_1_i_component_array.html" title="Interface for ComponentArray." alt="ECS::IComponentArray" shape="rect" coords="0,0,233,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5cceddec81c9779f3e1f98bdf5fb26b"><td class="memItemLeft" align="right" valign="top"><a id="af5cceddec81c9779f3e1f98bdf5fb26b" name="af5cceddec81c9779f3e1f98bdf5fb26b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insertData</b> (Entity entity, ComponentT component)</td></tr>
+<tr class="memitem:a8ad2bbd371779cfc34d6b16f3d17cbb4"><td class="memItemLeft" align="right" valign="top"><a id="a8ad2bbd371779cfc34d6b16f3d17cbb4" name="a8ad2bbd371779cfc34d6b16f3d17cbb4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentArray</b> ()</td></tr>
+<tr class="memdesc:a8ad2bbd371779cfc34d6b16f3d17cbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_e_c_s_1_1_component_array.html" title="ComponentArray is a container for components of a specific type.">ComponentArray</a> object. <br /></td></tr>
+<tr class="separator:a8ad2bbd371779cfc34d6b16f3d17cbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cceddec81c9779f3e1f98bdf5fb26b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_component_array.html#af5cceddec81c9779f3e1f98bdf5fb26b">insertData</a> (Entity entity, ComponentT component)</td></tr>
+<tr class="memdesc:af5cceddec81c9779f3e1f98bdf5fb26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new component to an entity.  <br /></td></tr>
 <tr class="separator:af5cceddec81c9779f3e1f98bdf5fb26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3c1de62dd7b5380fadb41dda283733"><td class="memItemLeft" align="right" valign="top"><a id="a1e3c1de62dd7b5380fadb41dda283733" name="a1e3c1de62dd7b5380fadb41dda283733"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeData</b> (Entity entity)</td></tr>
+<tr class="memitem:a1e3c1de62dd7b5380fadb41dda283733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_component_array.html#a1e3c1de62dd7b5380fadb41dda283733">removeData</a> (Entity entity)</td></tr>
+<tr class="memdesc:a1e3c1de62dd7b5380fadb41dda283733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove component data from an entity.  <br /></td></tr>
 <tr class="separator:a1e3c1de62dd7b5380fadb41dda283733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d4dad139e1461330d76436c752949f"><td class="memItemLeft" align="right" valign="top"><a id="ac5d4dad139e1461330d76436c752949f" name="ac5d4dad139e1461330d76436c752949f"></a>
-ComponentT &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> (Entity entity)</td></tr>
+<tr class="memitem:ac5d4dad139e1461330d76436c752949f"><td class="memItemLeft" align="right" valign="top">ComponentT &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_component_array.html#ac5d4dad139e1461330d76436c752949f">getData</a> (Entity entity)</td></tr>
+<tr class="memdesc:ac5d4dad139e1461330d76436c752949f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the component data of an entity.  <br /></td></tr>
 <tr class="separator:ac5d4dad139e1461330d76436c752949f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa64298556eeb34468bb285bef7594865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_component_array.html#aa64298556eeb34468bb285bef7594865">entityDestroyed</a> (Entity entity) override</td></tr>
+<tr class="memdesc:aa64298556eeb34468bb285bef7594865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals that an entity has been destroyed and removes the component data from the entity if it exists.  <br /></td></tr>
 <tr class="separator:aa64298556eeb34468bb285bef7594865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38b9dd6137198103a3f35246a354f01"><td class="memItemLeft" align="right" valign="top"><a id="aa38b9dd6137198103a3f35246a354f01" name="aa38b9dd6137198103a3f35246a354f01"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasEntity</b> (Entity entity)</td></tr>
+<tr class="memitem:aa38b9dd6137198103a3f35246a354f01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_component_array.html#aa38b9dd6137198103a3f35246a354f01">hasEntity</a> (Entity entity)</td></tr>
+<tr class="memdesc:aa38b9dd6137198103a3f35246a354f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the component array has an entity.  <br /></td></tr>
 <tr class="separator:aa38b9dd6137198103a3f35246a354f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c670a48e58f09467334a7a91c1c83d0"><td class="memItemLeft" align="right" valign="top"><a id="a3c670a48e58f09467334a7a91c1c83d0" name="a3c670a48e58f09467334a7a91c1c83d0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>entityDestroyed</b> (Entity entity)=0</td></tr>
+<tr class="memitem:a3c670a48e58f09467334a7a91c1c83d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_i_component_array.html#a3c670a48e58f09467334a7a91c1c83d0">entityDestroyed</a> (Entity entity)=0</td></tr>
 <tr class="separator:a3c670a48e58f09467334a7a91c1c83d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename ComponentT&gt;<br />
+class ECS::ComponentArray&lt; ComponentT &gt;</div><p><a class="el" href="class_e_c_s_1_1_component_array.html" title="ComponentArray is a container for components of a specific type.">ComponentArray</a> is a container for components of a specific type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>Type of the components </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa64298556eeb34468bb285bef7594865" name="aa64298556eeb34468bb285bef7594865"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa64298556eeb34468bb285bef7594865">&#9670;&#160;</a></span>entityDestroyed()</h2>
 
@@ -136,7 +154,172 @@ template&lt;typename ComponentT &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Signals that an entity has been destroyed and removes the component data from the entity if it exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to remove the data from </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_e_c_s_1_1_i_component_array.html">ECS::IComponentArray</a>.</p>
+
+</div>
+</div>
+<a id="ac5d4dad139e1461330d76436c752949f" name="ac5d4dad139e1461330d76436c752949f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d4dad139e1461330d76436c752949f">&#9670;&#160;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ComponentT &amp; <a class="el" href="class_e_c_s_1_1_component_array.html">ECS::ComponentArray</a>&lt; ComponentT &gt;::getData </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the component data of an entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to get the data from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ComponentT&amp; Reference to the component </dd></dl>
+
+</div>
+</div>
+<a id="aa38b9dd6137198103a3f35246a354f01" name="aa38b9dd6137198103a3f35246a354f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38b9dd6137198103a3f35246a354f01">&#9670;&#160;</a></span>hasEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_e_c_s_1_1_component_array.html">ECS::ComponentArray</a>&lt; ComponentT &gt;::hasEntity </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the component array has an entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true If the entity is in the component array, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="af5cceddec81c9779f3e1f98bdf5fb26b" name="af5cceddec81c9779f3e1f98bdf5fb26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cceddec81c9779f3e1f98bdf5fb26b">&#9670;&#160;</a></span>insertData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_e_c_s_1_1_component_array.html">ECS::ComponentArray</a>&lt; ComponentT &gt;::insertData </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComponentT&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a new component to an entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to add the component to </td></tr>
+    <tr><td class="paramname">component</td><td>Component to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e3c1de62dd7b5380fadb41dda283733" name="a1e3c1de62dd7b5380fadb41dda283733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3c1de62dd7b5380fadb41dda283733">&#9670;&#160;</a></span>removeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_e_c_s_1_1_component_array.html">ECS::ComponentArray</a>&lt; ComponentT &gt;::removeData </td>
+          <td>(</td>
+          <td class="paramtype">Entity&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove component data from an entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Entity to remove the data from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
