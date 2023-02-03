@@ -7,8 +7,16 @@
 #include "RuntimeException.hpp"
 
 namespace ECS {
+    /**
+     * @brief SystemManager is a container for Systems
+     */
     class SystemManager {
     public:
+        /**
+         * @brief Register a new system type
+         * @tparam SystemT Type of the system to register
+         * @return A shared pointer to the system
+         */
         template <typename SystemT>
         std::shared_ptr<SystemT> registerSystem() {
             const char *type_name = typeid(SystemT).name();
@@ -21,6 +29,11 @@ namespace ECS {
             type_name_to_system_signature[type_name] = ECS::Signature();
             return system;
         }
+        /**
+         * @brief set the signature of a system
+         * @tparam SystemT Type of the system to set the signature of
+         * @param signature The signature to set
+         */
         template <typename SystemT>
         void setSignature(Signature signature) {
             const char *type_name = typeid(SystemT).name();
@@ -29,6 +42,12 @@ namespace ECS {
             }
             type_name_to_system_signature[type_name] = signature;
         }
+        /**
+         * @brief set a bit of the signature of a system
+         * @tparam SystemT Type of the system to set the signature of
+         * @param position The position of the bit to set
+         * @param value The value to set the bit to
+         */
         template <typename SystemT>
         void setSignatureBit(size_t position, bool value = true) {
             const char *type_name = typeid(SystemT).name();
@@ -37,10 +56,19 @@ namespace ECS {
             }
             type_name_to_system_signature[type_name].set(position, value);
         }
+        /**
+         * @brief handle the destruction of an entity
+         * @param entity The entity that has been destroyed
+         */
         void entityDestroyed(Entity entity) {
             for (auto const &[_, system] : type_name_to_system)
                 system->entities.erase(entity);
         }
+        /**
+         * @brief handle the signature change of an entity
+         * @param entity The entity that has changed
+         * @param signature The new signature of the entity
+         */
         void entitySignatureChanged(Entity entity, Signature signature) {
             for (auto const &[type, system] : type_name_to_system) {
                 auto const &system_signature = type_name_to_system_signature[type];
