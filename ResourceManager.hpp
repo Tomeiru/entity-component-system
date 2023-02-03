@@ -6,8 +6,18 @@
 #include "RuntimeException.hpp"
 
 namespace ECS {
+    /**
+     * @brief ResourceManager is a container for Resources
+     */
     class ResourceManager {
     public:
+        /**
+         * @brief Register a new resource type
+         * @tparam ResourceT Type of the resource to register
+         * @tparam Args Types of the arguments to pass to the constructor of the resource
+         * @param args Arguments to pass to the constructor of the resource
+         * @return A shared pointer to the resource
+         */
         template<typename ResourceT, typename ...Args>
         std::shared_ptr<ResourceT> registerResource(Args ...args) {
             const char *type_name = typeid(ResourceT).name();
@@ -18,6 +28,11 @@ namespace ECS {
             type_name_to_resource[type_name] = resource;
             return (resource);
         }
+        /**
+         * @brief Get a resource
+         * @tparam ResourceT Type of the resource to get
+         * @return A shared pointer to the resource
+         */
         template<typename ResourceT>
         std::shared_ptr<ResourceT> getResource() {
             const char *type_name = typeid(ResourceT).name();

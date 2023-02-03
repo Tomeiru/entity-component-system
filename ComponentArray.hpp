@@ -6,16 +6,31 @@
 #include "RuntimeException.hpp"
 
 namespace ECS {
+    /**
+     * @brief Interface for ComponentArray
+     */
     class IComponentArray {
     public:
         virtual ~IComponentArray() = default;
         virtual void entityDestroyed(Entity entity) = 0;
     };
 
+    /**
+     * @brief ComponentArray is a container for components of a specific type
+     * @tparam ComponentT Type of the components
+     */
     template<typename ComponentT>
     class ComponentArray : public IComponentArray {
     public:
+        /**
+         * @brief Construct a new ComponentArray object
+         */
         ComponentArray() : index_last(0) {}
+        /**
+         * @brief Add a new component to an entity
+         * @param entity Entity to add the component to
+         * @param component Component to add
+         */
         void insertData(Entity entity, ComponentT component) {
             if (entity_to_index.find(entity) != entity_to_index.end())
                 throw RuntimeException("ComponentArray::insertData", "Entity's component already in corresponding ComponentArray");
@@ -24,6 +39,10 @@ namespace ECS {
             component_array[index_last] = component;
             index_last++;
         }
+        /**
+         * @brief Remove component data from an entity
+         * @param entity Entity to remove the data from
+         */
         void removeData(Entity entity) {
             if (entity_to_index.find(entity) == entity_to_index.end())
                 throw RuntimeException("ComponentArray::removeData", "Entity's component is not contained in corresponding ComponentArray");
@@ -36,15 +55,29 @@ namespace ECS {
             index_to_entity.erase(index_last - 1);
             index_last--;
         }
+        /**
+         * @brief Get the component data of an entity
+         * @param entity Entity to get the data from
+         * @return ComponentT& Reference to the component
+         */
         ComponentT &getData(Entity entity) {
             if (entity_to_index.find(entity) == entity_to_index.end())
                 throw RuntimeException("ComponentArray::getData", "Entity's component is not contained in corresponding ComponentArray");
             return (component_array[entity_to_index[entity]]);
         }
+        /**
+         * @brief Signals that an entity has been destroyed and removes the component data from the entity if it exists
+         * @param entity Entity to remove the data from
+         */
         void entityDestroyed(Entity entity) override {
             if (entity_to_index.find(entity) != entity_to_index.end())
                 removeData(entity);
         }
+        /**
+         * @brief Check if the component array has an entity
+         * @param entity Entity to check
+         * @return true If the entity is in the component array, false otherwise
+         */
         bool hasEntity(Entity entity) {
             return (entity_to_index.find(entity) != entity_to_index.end());
         }
