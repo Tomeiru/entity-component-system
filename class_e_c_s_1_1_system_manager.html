@@ -105,6 +105,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#a36fa0e26c4cdd80b0d4eb86f9708c694">entitySignatureChanged</a> (Entity entity, Signature signature)</td></tr>
 <tr class="memdesc:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the signature change of an entity  <br /></td></tr>
 <tr class="separator:a36fa0e26c4cdd80b0d4eb86f9708c694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdba65127efce9ef40f070672a12f47b"><td class="memTemplParams" colspan="2">template&lt;typename SystemT &gt; </td></tr>
+<tr class="memitem:abdba65127efce9ef40f070672a12f47b"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; SystemT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_system_manager.html#abdba65127efce9ef40f070672a12f47b">getSystem</a> ()</td></tr>
+<tr class="memdesc:abdba65127efce9ef40f070672a12f47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a resource.  <br /></td></tr>
+<tr class="separator:abdba65127efce9ef40f070672a12f47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_e_c_s_1_1_system_manager.html" title="SystemManager is a container for Systems.">SystemManager</a> is a container for Systems. </p>
@@ -185,6 +189,42 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abdba65127efce9ef40f070672a12f47b" name="abdba65127efce9ef40f070672a12f47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdba65127efce9ef40f070672a12f47b">&#9670;&#160;</a></span>getSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SystemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; SystemT &gt; ECS::SystemManager::getSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a resource. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SystemT</td><td>Type of the system to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the system </dd></dl>
 
 </div>
 </div>
