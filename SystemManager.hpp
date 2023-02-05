@@ -79,6 +79,20 @@ namespace ECS {
                     system->entities.erase(entity);
             }
         }
+        /**
+        * @brief Get a resource
+        * @tparam SystemT Type of the system to get
+        * @return A shared pointer to the system
+        */
+        template<typename SystemT>
+        std::shared_ptr<SystemT> getSystem() {
+            const char *type_name = typeid(SystemT).name();
+            auto find_result = type_name_to_system.find(type_name);
+            if (find_result == type_name_to_system.end()) {
+                throw RuntimeException("SystemManager::getSystem", "This Resource Type has not been registered yet");
+            }
+            return (std::static_pointer_cast<ResourceT>(find_result->second));
+        }
     private:
         std::unordered_map<const char *, Signature> type_name_to_system_signature;
         std::unordered_map<const char *, std::shared_ptr<System>> type_name_to_system;

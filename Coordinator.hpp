@@ -154,6 +154,15 @@ namespace ECS {
         std::shared_ptr<ResourceT> getResource() {
             return (resource_manager->getResource<ResourceT>());
         }
+        /**
+        * @brief Get a system
+        * @tparam SystemT Type of the system to get
+        * @return std::shared_ptr<SystemT> Pointer to the system
+        */
+        template<typename SystemT>
+        std::shared_ptr<SystemT> getSystem() {
+            return (system_manager->getSystem<SystemT>());
+        }
     private:
         std::unique_ptr<EntityManager> entity_manager;
         std::unique_ptr<ComponentManager> component_manager;
