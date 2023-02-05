@@ -97,7 +97,7 @@ public:
         if (find_result == type_name_to_system.end()) {
             throw RuntimeException("SystemManager::getSystem", "This Resource Type has not been registered yet");
         }
-        return (std::static_pointer_cast<ResourceT>(find_result->second));
+        return (std::static_pointer_cast<SystemT>(find_result->second));
     }
 
 private:
