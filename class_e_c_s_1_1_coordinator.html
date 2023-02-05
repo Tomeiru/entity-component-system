@@ -133,14 +133,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a353718578d37734349810b62ad39d3aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a353718578d37734349810b62ad39d3aa">setSignatureBit</a> (bool value=true)</td></tr>
 <tr class="memdesc:a353718578d37734349810b62ad39d3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the signature bit of a system.  <br /></td></tr>
 <tr class="separator:a353718578d37734349810b62ad39d3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplParams" colspan="2">template&lt;typename SystemT , typename ... ComponentTs&gt; </td></tr>
+<tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplParams" colspan="2">template&lt;typename SystemT , typename... ComponentTs&gt; </td></tr>
 <tr class="memitem:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#ae2dd2c0ed25061b0fb9741ca83be54c0">setSignatureBits</a> (bool value=true)</td></tr>
 <tr class="memdesc:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the signature bits of a system.  <br /></td></tr>
 <tr class="separator:ae2dd2c0ed25061b0fb9741ca83be54c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9931cb92e01e618d08383bf2d7d011af"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT , typename ... Args&gt; </td></tr>
-<tr class="memitem:a9931cb92e01e618d08383bf2d7d011af"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a9931cb92e01e618d08383bf2d7d011af">registerResource</a> (Args ...args)</td></tr>
-<tr class="memdesc:a9931cb92e01e618d08383bf2d7d011af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a resource.  <br /></td></tr>
-<tr class="separator:a9931cb92e01e618d08383bf2d7d011af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f206e8d0c6f0773b5730a5255fc6f6"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT , typename... Args&gt; </td></tr>
+<tr class="memitem:a86f206e8d0c6f0773b5730a5255fc6f6"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a86f206e8d0c6f0773b5730a5255fc6f6">registerResource</a> (Args... args)</td></tr>
+<tr class="memdesc:a86f206e8d0c6f0773b5730a5255fc6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a resource.  <br /></td></tr>
+<tr class="separator:a86f206e8d0c6f0773b5730a5255fc6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f1a1ddcd97414a211dcb7924b368419"><td class="memTemplParams" colspan="2">template&lt;typename ResourceT &gt; </td></tr>
 <tr class="memitem:a6f1a1ddcd97414a211dcb7924b368419"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; ResourceT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_e_c_s_1_1_coordinator.html#a6f1a1ddcd97414a211dcb7924b368419">getResource</a> ()</td></tr>
 <tr class="memdesc:a6f1a1ddcd97414a211dcb7924b368419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a resource.  <br /></td></tr>
@@ -497,13 +497,13 @@ template&lt;typename ComponentT &gt; </div>
 
 </div>
 </div>
-<a id="a9931cb92e01e618d08383bf2d7d011af" name="a9931cb92e01e618d08383bf2d7d011af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9931cb92e01e618d08383bf2d7d011af">&#9670;&#160;</a></span>registerResource()</h2>
+<a id="a86f206e8d0c6f0773b5730a5255fc6f6" name="a86f206e8d0c6f0773b5730a5255fc6f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f206e8d0c6f0773b5730a5255fc6f6">&#9670;&#160;</a></span>registerResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceT , typename ... Args&gt; </div>
+template&lt;typename ResourceT , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -511,7 +511,7 @@ template&lt;typename ResourceT , typename ... Args&gt; </div>
         <tr>
           <td class="memname">std::shared_ptr&lt; ResourceT &gt; ECS::Coordinator::registerResource </td>
           <td>(</td>
-          <td class="paramtype">Args ...&#160;</td>
+          <td class="paramtype">Args...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
@@ -710,7 +710,7 @@ template&lt;typename SystemT , typename ComponentT &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename SystemT , typename ... ComponentTs&gt; </div>
+template&lt;typename SystemT , typename... ComponentTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
